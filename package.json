@@ -1,0 +1,30 @@
+{
+  "name": "sendgrid_email_integration",
+  "version": "2.1.0",
+  "description": "SendGrid RESTful Email Library",
+  "main": "code/libraries/SendGridEmail",
+  "scripts": {
+    "test": "code/services/Test_SendEmail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rreinold/IoT_Package_SendGrid_Email_Integration.git"
+  },
+  "keywords": [
+    "email",
+    "sendgrid",
+    "http",
+    "e-mail",
+    "library",
+    "send",
+    "grid",
+    "notify",
+    "notifications"
+  ],
+  "author": "Robert Reinold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rreinold/IoT_Package_SendGrid_Email_Integration/issues"
+  },
+  "homepage": "https://github.com/rreinold/IoT_Package_SendGrid_Email_Integration#readme"
+}
