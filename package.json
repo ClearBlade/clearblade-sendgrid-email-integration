@@ -51,7 +51,7 @@
     "package1",
     "package2"
   ],
-  "image_url":"https://imagehoster.com/aHBV74b",
+  "image_url":"https://raw.githubusercontent.com/rreinold/IoT_Package_SendGrid_Email_Integration/master/banner.png",
   "author":{"email":"rreinold@clearblade.com"},
   "private":false
 }
