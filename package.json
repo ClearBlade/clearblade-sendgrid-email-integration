@@ -10,6 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/rreinold/IoT_Package_SendGrid_Email_Integration.git"
   },
+  "asset_types":[
+    "Code Libraries",
+    "Code Services",
+    "Portals",
+      "Collections",
+      "Triggers",
+      "Adapters",
+      "Roles",
+      "Timers",
+      "Plugins",
+      "Users",
+      "Edges",
+      "Devices"
+  ],
   "keywords": [
     "email",
     "sendgrid",
@@ -21,10 +35,23 @@
     "notify",
     "notifications"
   ],
-  "author": "Robert Reinold",
+  "programming_lang":"C",
+  "cloud":["AWS","Gcloud"],
+  "things":["NXP MENP","thunderboard","allen bradley"],
+  "domains": ["IIoT","Device Management","Building Management","Fleet Management"],
+  "protocols":["SMS","http","REST","NFC","BLE","CoAP","SNMP","bacnet"],
+  "gateways":["Raspberry Pi"],
+  "author": {"email":"rreinold@clearblade.com"},
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rreinold/IoT_Package_SendGrid_Email_Integration/issues"
   },
-  "homepage": "https://github.com/rreinold/IoT_Package_SendGrid_Email_Integration#readme"
+  "homepage": "https://github.com/rreinold/IoT_Package_SendGrid_Email_Integration#readme",
+  "dependencies": [
+    "package1",
+    "package2"
+  ],
+  "image_url":"https://imagehoster.com/aHBV74b",
+  "author":{"email":"rreinold@clearblade.com"},
+  "private":false
 }
