@@ -35,7 +35,7 @@
     "notify",
     "notifications"
   ],
-  "programming_lang":"C",
+  "programming_lang":["C"],
   "cloud":["AWS","Gcloud"],
   "things":["NXP MENP","thunderboard","allen bradley"],
   "domains": ["IIoT","Device Management","Building Management","Fleet Management"],
