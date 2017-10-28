@@ -1,5 +1,5 @@
 {
-  "name": "sendgrid_email_integration",
+  "name": "clearblade-sendgrid-email-integration",
   "version": "2.1.0",
   "description": "SendGrid RESTful Email Library",
   "main": "code/libraries/SendGridEmail",
