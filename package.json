@@ -35,8 +35,8 @@
     "notify",
     "notifications"
   ],
-  "programming_lang":["C"],
-  "cloud":["AWS","Gcloud"],
+  "prog_lang":["C"],
+  "clouds":["AWS","Gcloud"],
   "things":["NXP MENP","thunderboard","allen bradley"],
   "domains": ["IIoT","Device Management","Building Management","Fleet Management"],
   "protocols":["SMS","http","REST","NFC","BLE","CoAP","SNMP","bacnet"],
@@ -52,6 +52,5 @@
     "package2"
   ],
   "image_url":"https://raw.githubusercontent.com/rreinold/IoT_Package_SendGrid_Email_Integration/master/banner.png",
-  "author":{"email":"rreinold@clearblade.com"},
   "private":false
 }
