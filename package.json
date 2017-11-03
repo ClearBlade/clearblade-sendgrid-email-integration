@@ -41,7 +41,7 @@
   "domains": ["IIoT","Device Management","Building Management","Fleet Management"],
   "protocols":["SMS","http","REST","NFC","BLE","CoAP","SNMP","bacnet"],
   "gateways":["Raspberry Pi"],
-  "author": {"email":"rreinold@clearblade.com"},
+  "author": {"email":"rob@clearblade.com"},
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rreinold/IoT_Package_SendGrid_Email_Integration/issues"
