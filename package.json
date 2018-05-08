@@ -11,18 +11,7 @@
     "url": "git+https://github.com/rreinold/IoT_Package_SendGrid_Email_Integration.git"
   },
   "asset_types":[
-    "Code Libraries",
-    "Code Services",
-    "Portals",
-      "Collections",
-      "Triggers",
-      "Adapters",
-      "Roles",
-      "Timers",
-      "Plugins",
-      "Users",
-      "Edges",
-      "Devices"
+    "Code Libraries"
   ],
   "keywords": [
     "email",
