@@ -1,0 +1,12 @@
+{
+    "current_version": 11,
+    "dependencies": "log,SendGridEmail,SendGridConstants",
+    "logging_enabled": "true",
+    "name": "ExampleSendEmailAdvanced",
+    "params": [
+        "emailList"
+    ],
+    "permissions": {},
+    "run_user": "",
+    "source": "ExampleSendEmailAdvanced.js"
+}

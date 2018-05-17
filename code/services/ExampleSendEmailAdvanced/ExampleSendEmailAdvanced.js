@@ -1,15 +1,21 @@
-// TODO Drop in your SendGrid API Key. See SendGridEmail Library notes.
-var SEND_GRID_TOKEN = "<YOUR_SENDGRID_API_KEY>" // Example: "SG.Cf8LiKHeSQymCqMFL8sxxxxxxxxxx7_nsqd8clLfHGQPPDZologFWY73i4"
-var ORIGIN_EMAIL = "example@sendgrid.com"
-    
-function Example_SendEmail_Parameterized(req, resp){
+/**
+ * This example sends an email to an email list, with an HTML body
+ * 
+ * Parameters:
+ *  emailList: array of strings
+ *  ex. ["email1@gmail.com","email2@gmail.com","email3@gmail.com"]
+ * 
+*/
+
+
+function ExampleSendEmailAdvanced(req, resp){
     
     // `req` object contains useful information, check the logs to see its contents
     log(req)
     
-    // `req` object contains the email of the user that invocated this service
-    // so let's send an e-mail to the person who invoked this service
-    var emailRecipient = req.userEmail
+    // `req` object contains any parameters you may pass into your service
+    // so send this email to a list you will pass in as parameter
+    var emailRecipientList = req.params.emailList
     
     var timestamp = new Date();
     var message = 
@@ -21,8 +27,8 @@ function Example_SendEmail_Parameterized(req, resp){
         "Thank you!<br>ClearBlade"
     
     var subject = "ClearBlade IoT Platform - Connected Job Site - Inactivity Alert"
-    SendGridEmail.init(SEND_GRID_TOKEN, ORIGIN_EMAIL)    
-    SendGridEmail.sendEmailToList(message, subject, [emailRecipient], function(err, data){
+    var sgEmail = SendGridEmail(SEND_GRID_TOKEN, ORIGIN_EMAIL)    
+    sgEmail.SendEmailToList(message, subject, emailRecipientList, function(err, data){
         if(err){
             log(JSON.stringify(err))
             resp.error(err)

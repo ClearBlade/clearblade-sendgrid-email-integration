@@ -1,0 +1,10 @@
+{
+    "current_version": 5,
+    "dependencies": "SendGridEmail,log,SendGridConstants",
+    "logging_enabled": "true",
+    "name": "ExampleSendEmailParameterized",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "ExampleSendEmailParameterized.js"
+}

@@ -1,7 +1,76 @@
 {
     "auth": true,
+    "deployments": [
+        {
+            "assets": [
+                {
+                    "asset_class": "devices",
+                    "asset_id": "",
+                    "deployment": "Default Deployment",
+                    "member": "Default Deployment_deployment_edge_group",
+                    "sync": true
+                },
+                {
+                    "asset_class": "users",
+                    "asset_id": "",
+                    "deployment": "Default Deployment",
+                    "member": "Default Deployment_deployment_edge_group",
+                    "sync": true
+                },
+                {
+                    "asset_class": "services",
+                    "asset_id": "",
+                    "deployment": "Default Deployment",
+                    "member": "Default Deployment_deployment_edge_group",
+                    "sync": false
+                },
+                {
+                    "asset_class": "libraries",
+                    "asset_id": "",
+                    "deployment": "Default Deployment",
+                    "member": "Default Deployment_deployment_edge_group",
+                    "sync": false
+                },
+                {
+                    "asset_class": "timers",
+                    "asset_id": "",
+                    "deployment": "Default Deployment",
+                    "member": "Default Deployment_deployment_edge_group",
+                    "sync": false
+                },
+                {
+                    "asset_class": "triggers",
+                    "asset_id": "",
+                    "deployment": "Default Deployment",
+                    "member": "Default Deployment_deployment_edge_group",
+                    "sync": false
+                },
+                {
+                    "asset_class": "portals",
+                    "asset_id": "",
+                    "deployment": "Default Deployment",
+                    "member": "Default Deployment_deployment_edge_group",
+                    "sync": false
+                },
+                {
+                    "asset_class": "plugins",
+                    "asset_id": "",
+                    "deployment": "Default Deployment",
+                    "member": "Default Deployment_deployment_edge_group",
+                    "sync": false
+                }
+            ],
+            "description": "Deployment created by the database migration process. It reflects the old semantics for ClearBlade systems",
+            "edges": [
+                "___ALL_EDGES___"
+            ],
+            "name": "Default Deployment"
+        }
+    ],
     "description": "SendGrid RESTful Email Library",
     "messaging_url": "staging.clearblade.com:1883",
-    "name": "Package_SendGridEmailIntegration",
-    "platform_url": "https://staging.clearblade.com"
+    "name": "dev-sendgrid-email-library",
+    "platform_url": "https://staging.clearblade.com",
+    "system_key": "e095a19d0b94e48dee9bff87e5fd01",
+    "system_secret": "E095A19D0B9ACD9EFA86AEEDFCC001"
 }

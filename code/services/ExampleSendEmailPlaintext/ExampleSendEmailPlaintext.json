@@ -1,0 +1,10 @@
+{
+    "current_version": 6,
+    "dependencies": "SendGridEmail,log,SendGridConstants",
+    "logging_enabled": "true",
+    "name": "ExampleSendEmailPlaintext",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "ExampleSendEmailPlaintext.js"
+}
