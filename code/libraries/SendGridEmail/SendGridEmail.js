@@ -28,7 +28,7 @@ function SendGridEmail(authToken, originEmail) {
      * @memberof SendGridEmail
      * @param {string} emailBody - body of your email
      * @param {string} subject - subject of your email
-     * @param {string[]} recipientList - list of recipients 
+     * @param {string[]} recipientList - list of recipients, ex ["myEmail@gmail.com","yourEmail@gmail.com"]
      * @param {callback} callback
      * @returns {Object} response, as specified in sendgrid api
      * 
@@ -39,7 +39,7 @@ function SendGridEmail(authToken, originEmail) {
      *      if(err){
      *          resp.error(err)
      *      }
-     *      var message = "Successful email sent!"
+     *      var message = "Successfully sent email!"
      *      resp.success(message);
      * });
      */
