@@ -15,13 +15,7 @@ This is an ipm package, which contains one or more reusable assets within the ip
 - * Usage:
 - * 1. Create a free SendGrid Account. 
 - * 2. Log into your SendGrid account, and view the Settings > API Keys tab. Create an API Key with full access to "Mail Send" rights.
-- * 3. Replace <SEND_GRID_API_KEY> with SendGrid API key
-- * 4. Replace <ORIGIN_EMAIL_ADDRESS> with your desired email address. This will be the 'sender' of the email.
-- * 5. Add 'SendGridEmail' as a dependency to your code services (Settings > Requires > Add)
-
-## Usage
-
-Edit SendGridConstants Library with your API key and origin email address:
+- * 3. Update `SendGridConstants` Library
 
 ```js
 // TODO Use your own credentials, these are examples
@@ -30,8 +24,13 @@ var ORIGIN_EMAIL = "example@sendgrid.com";
 var EMAIL_RECIPIENTS = ["email1@email.com"]
 ```
 
+- * 5. Add 'SendGridEmail' as a dependency to any of your code services (Settings > Requires > Add)
+
+## Usage
+
+Run `ExampleSendEmailPlaintext` Code Service, also here for reference:
+
 ```js
-//Assign relevant values to the variables and constants
 var sgEmail = SendGridEmail(SEND_GRID_TOKEN, ORIGIN_EMAIL)
 sgEmail.SendEmailToList("Alert!", "ClearBlade Email Alert", EMAIL_RECIPIENTS, function(err, data){
      if(err){
