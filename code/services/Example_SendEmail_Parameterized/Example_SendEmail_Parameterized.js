@@ -2,7 +2,7 @@
 var SEND_GRID_TOKEN = "<YOUR_SENDGRID_API_KEY>" // Example: "SG.Cf8LiKHeSQymCqMFL8sxxxxxxxxxx7_nsqd8clLfHGQPPDZologFWY73i4"
 var ORIGIN_EMAIL = "example@sendgrid.com"
     
-function Example_SendEmail_Parameterized(req, resp){
+function ExampleSendEmailParameterized(req, resp){
     
     // `req` object contains useful information, check the logs to see its contents
     log(req)
@@ -21,8 +21,8 @@ function Example_SendEmail_Parameterized(req, resp){
         "Thank you!<br>ClearBlade"
     
     var subject = "ClearBlade IoT Platform - Connected Job Site - Inactivity Alert"
-    SendGridEmail.init(SEND_GRID_TOKEN, ORIGIN_EMAIL)    
-    SendGridEmail.sendEmailToList(message, subject, [emailRecipient], function(err, data){
+    var sgEmail = SendgridEmail(SEND_GRID_TOKEN, ORIGIN_EMAIL)    
+    sgEmail.SendEmailToList(message, subject, [emailRecipient], function(err, data){
         if(err){
             log(JSON.stringify(err))
             resp.error(err)

@@ -2,9 +2,9 @@
     "current_version": 8,
     "dependencies": "SendGridEmail",
     "logging_enabled": "true",
-    "name": "Test_SendEmail_MissingOriginEmail",
+    "name": "TestSendEmailMissingOriginEmail",
     "params": [],
     "permissions": {},
     "run_user": "",
-    "source": "Test_SendEmail_MissingOriginEmail.js"
+    "source": "TestSendEmailMissingOriginEmail.js"
 }

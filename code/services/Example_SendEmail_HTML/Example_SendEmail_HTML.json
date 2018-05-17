@@ -2,9 +2,9 @@
     "current_version": 34,
     "dependencies": "SendGridEmail,log",
     "logging_enabled": "true",
-    "name": "Example_SendEmail_HTML",
+    "name": "ExampleSendEmailHTML",
     "params": [],
     "permissions": {},
     "run_user": "",
-    "source": "Example_SendEmail_HTML.js"
+    "source": "ExampleSendEmailHTML.js"
 }

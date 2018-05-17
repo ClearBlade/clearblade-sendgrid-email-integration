@@ -5,7 +5,7 @@ var ORIGIN_EMAIL = "example@sendgrid.com"
 // TODO Drop in recipient email
 var EMAIL_RECIPIENTS = ["<RECIPIENT_EMAIL>"] // ex ["email1@email.com"]
 
-function Example_SendEmail_HTML(req, resp){
+function ExampleSendEmailHTML(req, resp){
         
     // Hint: `req` object contains useful information, check the logs to see its contents
     log(req)
@@ -19,8 +19,8 @@ function Example_SendEmail_HTML(req, resp){
         "Thank you!<br>ClearBlade"
     
     var subject = "ClearBlade IoT Platform - Connected Job Site - Inactivity Alert"
-    SendGridEmail.init(SEND_GRID_TOKEN, ORIGIN_EMAIL)    
-    SendGridEmail.sendEmailToList(message, subject, EMAIL_RECIPIENTS, function(err, data){
+    var sgEmail = SendgridEmail(SEND_GRID_TOKEN, ORIGIN_EMAIL)    
+    sgEmail.SendEmailToList(message, subject, EMAIL_RECIPIENTS, function(err, data){
         if(err){
             log(JSON.stringify(err))
             resp.error(err)
