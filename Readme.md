@@ -14,9 +14,9 @@ This is an ipm package, which contains one or more reusable assets within the ip
 
 ## Setup
 
-- 1. Create a free SendGrid Account. 
-- 2. Log into your SendGrid account, and view the Settings > API Keys tab. Create an API Key with full access to "Mail Send" rights.
-- 3. Update `SendGridConstants` Library
+- Create a free SendGrid Account. 
+- Log into your SendGrid account, and view the Settings > API Keys tab. Create an API Key with full access to "Mail Send" rights.
+- Update `SendGridConstants` Library
 
 ```js
 // TODO Use your own credentials, these are examples
