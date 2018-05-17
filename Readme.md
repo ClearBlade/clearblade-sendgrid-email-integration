@@ -20,27 +20,48 @@ This is an ipm package, which contains one or more reusable assets within the ip
 - * 5. Add 'SendGridEmail' as a dependency to your code services (Settings > Requires > Add)
 
 ## Usage
-This library helps lets user use an email service provided by SendGrid.
 
-##Assets
+Edit SendGridConstants Library with your API key and origin email address:
+
+```js
+// TODO Use your own credentials, these are examples
+var SEND_GRID_TOKEN = "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"
+var ORIGIN_EMAIL = "example@sendgrid.com";
+var EMAIL_RECIPIENTS = ["email1@email.com"]
+```
+
+```js
+//Assign relevant values to the variables and constants
+var sgEmail = SendGridEmail(SEND_GRID_TOKEN, ORIGIN_EMAIL)
+sgEmail.SendEmailToList("Alert!", "ClearBlade Email Alert", EMAIL_RECIPIENTS, function(err, data){
+     if(err){
+         resp.error(err)
+     }
+     var message = "Successful email sent!"
+     resp.success(message);
+});
+```
+
+## Assets
 
 ### Code Services
 
 Examples:
 
-4. ExampleSendEmailPlaintext - Sends an email with static plaintext content
-3. ExampleSendEmailParameterized - Sends an email with a dynamic plaintext content with parameter passed into Code Service
-2. ExampleSendEmailHTML - Sends an email with static HTML content
+4. `ExampleSendEmailPlaintext` - Sends an email with static plaintext content
+3. `ExampleSendEmailParameterized` - Sends an email with a dynamic plaintext content with parameter passed into Code Service
+2. `ExampleSendEmailHTML` - Sends an email with static HTML content
 1. `ExampleSendEmailAdvanced` - Sends an email with dynamic HTML Content passed into Code Service
 
 Tests:
 
-5. TestSendEmailMissingAuthToken
-6. TestSendEmailMissingOriginEmail
+5. `TestSendEmailMissingAuthToken` - Tests init and validation logic
+6. `TestSendEmailMissingOriginEmail` - Tests validation of origin email
 
 ### Code Libraries
-1. SendGridConstants - This lib has constants which needs to be set by the user to test the example services. It is recommended to store keys in the constants library for centralized management of keys.
-2. SendGridEmail - Described in the API section.
+
+1. `SendGridConstants` - This lib has constants which needs to be set by the user to test the example services. It is recommended to store keys in the constants library for centralized management of keys.
+2. `SendGridEmail` - Described in the API section.
 
 ## API<a name="sendgrid-email-library"></a>
 ### Typedefs
