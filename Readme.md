@@ -25,7 +25,7 @@ var ORIGIN_EMAIL = "example@sendgrid.com";
 var EMAIL_RECIPIENTS = ["email1@email.com"]
 ```
 
-- * 5. Add 'SendGridEmail' as a dependency to any of your code services (Settings > Requires > Add)
+- Add 'SendGridEmail' as a dependency to any of your code services (Settings > Requires > Add)
 
 ## Usage
 
