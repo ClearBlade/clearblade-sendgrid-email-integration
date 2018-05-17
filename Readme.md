@@ -4,7 +4,9 @@
 ## Overview
 SendGrid is an email service trusted by developers and marketers for time-savings, scalability and delivery expertise.  
 
-To get an overview of SendGrid features and functionality click [here](https://sendgrid.com). If any suggestions or addition of new methods create a pull request. For further support, comment or create issues on this repo.
+To get an overview of SendGrid features and functionality click [here](https://sendgrid.com). 
+
+If any suggestions or addition of new methods create a pull request. For further support, comment or create issues on this repo.
 
 This is an ipm package, which contains one or more reusable assets within the ipm Community. The 'package.json' in this repo is a ipm spec's package.json, [here](https://docs.clearblade.com/v/3/6-ipm/spec), which is a superset of npm's package.json spec, [here](https://docs.npmjs.com/files/package.json).
 
@@ -12,10 +14,9 @@ This is an ipm package, which contains one or more reusable assets within the ip
 
 ## Setup
 
-- * Usage:
-- * 1. Create a free SendGrid Account. 
-- * 2. Log into your SendGrid account, and view the Settings > API Keys tab. Create an API Key with full access to "Mail Send" rights.
-- * 3. Update `SendGridConstants` Library
+- 1. Create a free SendGrid Account. 
+- 2. Log into your SendGrid account, and view the Settings > API Keys tab. Create an API Key with full access to "Mail Send" rights.
+- 3. Update `SendGridConstants` Library
 
 ```js
 // TODO Use your own credentials, these are examples
