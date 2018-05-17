@@ -1,6 +1,6 @@
 {
-    "current_version": 34,
-    "dependencies": "SendGridEmail,log",
+    "current_version": 6,
+    "dependencies": "SendGridEmail,log,SendGridConstants",
     "logging_enabled": "true",
     "name": "ExampleSendEmailHTML",
     "params": [],

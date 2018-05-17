@@ -14,12 +14,24 @@ This is an ipm package, which contains one or more reusable assets within the ip
 If you already have a SendGrid account,  API key can be generated/accessed in your account. Click [here](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#api-keys) for further details. 
 
 ## Usage
-  
+This library helps lets user use an email service provided by SendGrid through ClearBlade platform.
+
+##Assets
 ### Code Services
-All the services below shows how to - 
+Following are sample services:- 
+
+1. ExampleSendEmailAdvanced
+2. ExampleSendEmailHTML
+3. ExampleSendEmailParameterized
+4. ExampleSendEmailPlaintext
+5. TestSendEmailMissingAuthToken
+6. TestSendEmailMissingOriginEmail
+
+### Code Libraries
+1. SendGridConstants - This lib has constants which needs to be set by the user to test the example services. It is recommended to store keys in the constants library for centralized management of keys.
+2. SendGridEmail - Described in the API section.
 
 ## API<a name="sendgrid-email-library"></a>
-
 ### Typedefs
 
 <dl>

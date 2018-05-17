@@ -1,5 +1,5 @@
 {
-    "current_version": 38,
+    "current_version": 6,
     "dependencies": "SendGridEmail,log",
     "logging_enabled": "true",
     "name": "TestSendEmailMissingAuthToken",

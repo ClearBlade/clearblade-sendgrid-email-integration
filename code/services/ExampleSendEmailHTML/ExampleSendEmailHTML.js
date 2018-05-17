@@ -1,9 +1,3 @@
-// TODO Drop in your SendGrid API Key. See SendGridEmail Library notes.
-var SEND_GRID_TOKEN = "<YOUR_SENDGRID_API_KEY>" // Example: "SG.Cf8LiKHeSQymCqMFL8sxxxxxxxxxx7_nsqd8clLfHGQPPDZologFWY73i4"
-// TODO Drop in your origin email
-var ORIGIN_EMAIL = "example@sendgrid.com"
-// TODO Drop in recipient email
-var EMAIL_RECIPIENTS = ["<RECIPIENT_EMAIL>"] // ex ["email1@email.com"]
 
 function ExampleSendEmailHTML(req, resp){
         
@@ -19,7 +13,7 @@ function ExampleSendEmailHTML(req, resp){
         "Thank you!<br>ClearBlade"
     
     var subject = "ClearBlade IoT Platform - Connected Job Site - Inactivity Alert"
-    var sgEmail = SendgridEmail(SEND_GRID_TOKEN, ORIGIN_EMAIL)    
+    var sgEmail = SendGridEmail(SEND_GRID_TOKEN, ORIGIN_EMAIL)    
     sgEmail.SendEmailToList(message, subject, EMAIL_RECIPIENTS, function(err, data){
         if(err){
             log(JSON.stringify(err))

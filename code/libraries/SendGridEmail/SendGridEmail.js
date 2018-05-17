@@ -5,7 +5,6 @@
  * @typedef {Object} SendGridEmail
  * @param {string} authToken
  * @param {string} originEmail
- * 
  * @example  
  * var sgEmail = SendGridEmail(SEND_GRID_TOKEN, ORIGIN_EMAIL)
  * 
@@ -84,6 +83,10 @@ function SendGridEmail(authToken, originEmail) {
             }
         });
 
+    }
+    
+    return {
+        SendEmailToList
     };
 }
 
